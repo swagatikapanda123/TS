@@ -3,6 +3,10 @@
 }
 #head{
 	    background-image: linear-gradient(to bottom right,#F1B7EF,#7C99EE);
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+        
 
 }
 .dropbtn {
@@ -64,3 +68,18 @@
     text-decoration: none;
 }
 * {box-sizing:border-box}
+.image {
+    -webkit-animation-name: rotation; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  animation-name: rotation;
+  animation-duration: 8s;
+}
+
+@-webkit-keyframes rotation  {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
